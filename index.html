@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjali Verma - Portfolio</title>
+  <meta name="description" content="CEO's Office Internship portfolio - Anjali Verma" />
+  <meta name="theme-color" content="#0C0C0C" />
+  <style>
+    ::selection { background: #C9F25E; color: #0C0C0C; }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="view--manager">
+
+  <!-- ── Scroll progress ─────────────────────────────────────────────────────── -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ── Grain ──────────────────────────────────────────────────────────────── -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ── Background art ───────────────────────────────────────────────────── -->
+  <div class="bg-art" aria-hidden="true">
+    <div class="bg-blob bg-blob--rose"></div>
+    <div class="bg-blob bg-blob--lavender"></div>
+    <div class="bg-blob bg-blob--peach"></div>
+    <div class="bg-blob bg-blob--mint"></div>
+    <div class="bg-ring bg-ring--lg"></div>
+    <div class="bg-ring bg-ring--sm"></div>
+    <div class="bg-ring bg-ring--xs"></div>
+  </div>
+
+  <!-- ── Cursor layers ──────────────────────────────────────────────────────── -->
+  <div class="cursor-glow"  aria-hidden="true"></div>
+  <div class="cursor-ring"  aria-hidden="true"></div>
+  <div class="cursor-dot"   aria-hidden="true"></div>
+  <div class="cursor-label" id="cursor-label" aria-hidden="true"></div>
+
+  <!-- ── Keyboard shortcut overlay ──────────────────────────────────────────── -->
+  <div class="kbd-overlay" id="kbd-overlay" aria-hidden="true" role="dialog" aria-label="Keyboard shortcuts">
+    <div class="kbd-panel glass-card">
+      <div class="kbd-header">
+        <span class="kbd-title">Keyboard shortcuts</span>
+        <span class="kbd-hint">Press <kbd>?</kbd> or <kbd>Esc</kbd> to close</span>
+      </div>
+      <div class="kbd-list">
+        <div class="kbd-item"><span>Go to Work</span>      <div class="kbd-keys"><kbd>G</kbd><kbd>W</kbd></div></div>
+        <div class="kbd-item"><span>Go to Contact</span>   <div class="kbd-keys"><kbd>G</kbd><kbd>C</kbd></div></div>
+        <div class="kbd-item"><span>Toggle shortcuts</span><div class="kbd-keys"><kbd>?</kbd></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Toast ──────────────────────────────────────────────────────────────── -->
+  <div class="toast" id="toast" aria-live="polite">Thanks for reading. ~ Anjali</div>
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+  <nav id="nav" aria-label="Site navigation">
+    <a href="#" class="nav-logo">
+      <img src="IMG_20260225_114201.jpg-removebg-preview.png" alt="NEETprep" class="nav-logo-img" />
+    </a>
+    <a href="https://github.com/Anjali-2034" class="nav-github" target="_blank" rel="noopener" aria-label="GitHub profile">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+      <span>GitHub</span>
+    </a>
+  </nav>
+
+  <!-- ══ HERO ════════════════════════════════════════════════════════════════ -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-overline">CEO&rsquo;s Office Intern</div>
+    <h1 class="hero-name" id="hero-name" aria-label="Anjali Verma">Anjali Verma</h1>
+    <div class="hero-sub-wrap">
+      <p class="hero-sub" id="hero-sub">
+        I joined the CEO&rsquo;s Office to learn how decisions get made.
+        Five months later, I&rsquo;m shipping the systems behind them -
+        leads, content, automations, dashboards. Here&rsquo;s the work.
+      </p>
+    </div>
+    <a href="#work" class="btn-cta hero-cta" data-magnetic>
+      View Work <span aria-hidden="true">→</span>
+    </a>
+
+    <!-- Floating card -->
+    <div class="hero-card glass-card" aria-hidden="true">
+      <div class="hero-stat">
+        <span class="hero-stat-num">7+</span>
+        <span class="hero-stat-label">Projects Delivered</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" id="hero-company">GoodEducator</span>
+        <span class="hero-stat-label">Current Role</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">2025</span>
+        <span class="hero-stat-label">Cohort</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ WORK — horizontal film ═════════════════════════════════════════════ -->
+  <div class="film-wrapper" id="work">
+    <section class="film-section" aria-label="Selected work">
+      <div class="film-header">
+        <div class="film-header-left">
+          <span class="overline">Selected Work</span>
+          <h2 class="film-section-title">Projects</h2>
+        </div>
+        <div class="film-header-right">
+          <span class="film-counter" id="film-counter">01 / 07</span>
+          <span class="film-scroll-hint" aria-hidden="true">scroll to explore →</span>
+        </div>
+      </div>
+      <div class="film-track" id="film-track" aria-label="Project case studies">
+        <!-- Injected by main.js -->
+      </div>
+      <div class="film-dots" id="film-dots" aria-hidden="true"></div>
+    </section>
+  </div>
+
+
+  <!-- ══ REFLECTION ══════════════════════════════════════════════════════════ -->
+  <section class="reflection" aria-label="Personal reflection">
+    <p>Beyond the technical work, I learned how to stay patient, work professionally, and somehow enjoy even the repetitive chaos of those &ldquo;just one tiny urgent change&rdquo; moments. I also picked up a lot by observing leadership around me, especially the skill of communicating with a mix of clarity and confidence, and it is honestly something I admire a lot and hope to carry forward :)</p>
+    <p class="reflection-signature">- Anjali</p>
+  </section>
+
+  <!-- ══ FOOTER ═════════════════════════════════════════════════════════════ -->
+  <footer>
+    <span class="footer-copy">&copy; Anjali Verma <span class="footer-sep" aria-hidden="true"></span> CEO&rsquo;s Office <span class="footer-sep" aria-hidden="true"></span> GoodEducator</span>
+    <button class="footer-top" id="footer-top" aria-label="Back to top">back to top &uarr;</button>
+  </footer>
+
+  <!-- ══ PROJECT MODAL ═════════════════════════════════════════════════════════ -->
+  <div id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <article class="modal-card glass-card">
+      <button class="modal-close" id="modal-close" aria-label="Close project details">&#x2715;</button>
+      <div class="modal-deco-num" id="modal-deco-num" aria-hidden="true">01</div>
+      <header class="modal-header">
+        <span class="modal-pnum" id="modal-pnum">01</span>
+        <h2 class="modal-title" id="modal-title"></h2>
+      </header>
+      <p class="modal-overview" id="modal-overview"></p>
+      <div class="modal-sections">
+        <div class="modal-section modal-section--contributions">
+          <h3 class="modal-section-title">Key Contributions</h3>
+          <ul class="modal-list" id="modal-contributions"></ul>
+        </div>
+        <div class="modal-section modal-section--impact">
+          <h3 class="modal-section-title">Impact</h3>
+          <ul class="modal-list modal-list--impact" id="modal-impact"></ul>
+        </div>
+      </div>
+      <div class="modal-images" id="modal-images" aria-label="Project screenshots"></div>
+      <footer class="modal-footer">
+        <div class="modal-tags" id="modal-tags"></div>
+        <a class="btn-cta modal-link" id="modal-link" target="_blank" rel="noopener">
+          View Repository <span aria-hidden="true">&#x2197;</span>
+        </a>
+      </footer>
+    </article>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "lenis": "https://unpkg.com/lenis@1.1.13/dist/lenis.mjs"
+    }
+  }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
